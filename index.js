@@ -6,7 +6,7 @@ let load = 0
 class Loading{
     static blurring(){
         load++ 
-        if(load > 90){
+        if(load > 99){
             clearInterval(int)
         }
         
@@ -20,4 +20,3 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
     return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
 }
 const int =  setInterval(Loading.blurring, 30);
-
